@@ -1,0 +1,72 @@
+@keyframes heartbeatAnimation {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: scale(1);
+    }
+    40%,
+    60% {
+        transform: scale(1.2);
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+header,
+main,
+footer {
+    padding: 20px;
+}
+
+header {
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 120%;
+}
+main {
+    background-color: #ffffff;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+#contenido {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#botonCorazon {
+    position: fixed;
+    bottom: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    animation: heartbeatAnimation 2s infinite;
+}
+
+#botonCorazon img {
+    width: 100px;
+    height: auto;
+}
+
+#galeria img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
